@@ -3,7 +3,7 @@ package com.example.saludo
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -12,18 +12,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Conectar los elementos de la UI
-        val inputName: EditText = findViewById(R.id.inputName)
-        val buttonGreet: Button = findViewById(R.id.buttonGreet)
-        val textGreeting: TextView = findViewById(R.id.textGreeting)
+        // Inicializar los elementos de la interfaz
+        val nameEditText: EditText = findViewById(R.id.nameEditText)
+        val emailEditText: EditText = findViewById(R.id.emailEditText)
+        val phoneEditText: EditText = findViewById(R.id.phoneEditText)
+        val signUpButton: Button = findViewById(R.id.signUpButton)
 
-        // Asignar la funcionalidad al botón
-        buttonGreet.setOnClickListener {
-            val name = inputName.text.toString()
-            if (name.isNotBlank()) {
-                textGreeting.text = "Hola $name"
-                textGreeting.visibility = TextView.VISIBLE
-            }
+        // Agregar la funcionalidad al botón
+        signUpButton.setOnClickListener {
+            val name = nameEditText.text.toString()
+            val email = emailEditText.text.toString()
+            val phone = phoneEditText.text.toString()
+
+            Toast.makeText(this, "Welcome, $name!", Toast.LENGTH_LONG).show()
         }
     }
 }
