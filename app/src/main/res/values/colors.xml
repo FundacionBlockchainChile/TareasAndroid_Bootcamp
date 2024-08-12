@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Primary color - Orange -->
+    <color name="primaryColor">#FF9800</color>
+    <color name="primaryDarkColor">#F57C00</color>
+    <color name="primaryLightColor">#FFE0B2</color>
+
+    <!-- Accent color - A shade of purple to complement orange -->
+    <color name="accentColor">#7E57C2</color>
+
+    <!-- Background and surface colors -->
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="surfaceColor">#FAFAFA</color>
+
+    <!-- Text colors -->
+    <color name="textPrimaryColor">#212121</color>
+    <color name="textSecondaryColor">#757575</color>
+    <color name="textOnPrimaryColor">#FFFFFF</color>
+
+    <!-- Button colors -->
+    <color name="buttonColor">#FF9800</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+
+    <!-- Light gray for text background -->
+    <color name="lightGray">#BDBDBD</color>
+
+    <color name="holo_yellow_light">#FFFFEB3B</color>
 </resources>
