@@ -1,9 +1,38 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Saludo" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Elimina o comenta cualquier personalización que pueda sobrescribir el color de los botones -->
     </style>
 
-    <style name="Theme.Saludo" parent="Base.Theme.Saludo" />
+    <style name="Theme.Saludo" parent="Base.Theme.Saludo">
+        <!-- Aquí también verifica que no se esté sobrescribiendo el color de los botones -->
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Theme.Saludo.Professional" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colores de la aplicación -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorBackground</item>
+
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryDark</item>
+        <item name="colorOnSecondary">@color/colorBackground</item>
+
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+
+        <!-- Personaliza el estilo de los botones -->
+        <item name="buttonStyle">@style/Widget.Button.Orange</item>
+
+        <!-- Otros estilos pueden ir aquí -->
+    </style>
+
+    <!-- Botón estilo naranja -->
+    <style name="Widget.Button.Orange" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:radius">16dp</item>
+    </style>
 </resources>

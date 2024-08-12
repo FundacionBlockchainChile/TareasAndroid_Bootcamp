@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Define el color de fondo del botón -->
+    <solid android:color="@color/colorPrimary"/>
+
+    <!-- Define el radio de las esquinas -->
+    <corners android:radius="8dp"/>
+
+    <!-- Define el margen interno del botón -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp" />
+
+</shape>

@@ -30,6 +30,13 @@ class MainActivity : AppCompatActivity() {
         val buttonEquals: Button = findViewById(R.id.buttonEquals)
         val buttonDecimal: Button = findViewById(R.id.buttonDecimal)
 
+        // Botón para cerrar la aplicación
+        val buttonClose: Button = findViewById(R.id.buttonClose)
+        buttonClose.setOnClickListener {
+            finish()  // Cierra la actividad actual
+            System.exit(0)  // Cierra la aplicación completamente
+        }
+
         val buttons = listOf(
             findViewById<Button>(R.id.button0), findViewById<Button>(R.id.button1),
             findViewById<Button>(R.id.button2), findViewById<Button>(R.id.button3),

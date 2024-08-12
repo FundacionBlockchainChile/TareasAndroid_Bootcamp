@@ -1,5 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Naranja principal -->
+    <color name="colorPrimary">#FF9800</color> <!-- Orange -->
+    <color name="colorPrimaryDark">#F57C00</color> <!-- Darker Orange -->
+    <color name="colorAccent">#FFC107</color> <!-- Amber -->
+    <color name="colorPrimaryLight">#FFB74D</color> <!-- Light Orange -->
+
+    <!-- Colores neutros -->
+    <color name="colorBackground">#FFFFFF</color> <!-- Blanco -->
+    <color name="colorTextPrimary">#212121</color> <!-- Negro suave -->
+    <color name="colorTextSecondary">#757575</color> <!-- Gris oscuro -->
+
+    <!-- Otros colores de acento -->
+    <color name="colorSecondary">#4CAF50</color> <!-- Verde -->
+    <color name="colorSecondaryDark">#388E3C</color> <!-- Verde oscuro -->
 </resources>
