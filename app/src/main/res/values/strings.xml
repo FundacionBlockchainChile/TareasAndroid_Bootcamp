@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Saludo</string>
-    <string name="title">Escribe tu nombre</string>
-    <string name="greet_button">Saludo</string>
-    <string name="greeting_message">Hola %1$s</string>
-    <string name="enter_name">Introduce tu nombre</string>
+    <string name="app_name">Registro de Usuario</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_last_name">Apellido</string>
+    <string name="hint_email">Correo Electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="create_account">Crear Cuenta</string>
 </resources>
