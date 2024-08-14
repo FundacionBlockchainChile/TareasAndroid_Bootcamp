@@ -2,10 +2,11 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Saludo" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <item name="colorPrimary">@color/primaryColor</item>
-        <item name="colorAccent">@color/accentColor</item>
-        <item name="android:background">@color/backgroundColor</item>
+        <item name="android:textColor">@color/textColor</item> <!-- Aplica el color #7700FF -->
+        <item name="android:textSize">20sp</item> <!-- Aplica el tamaño de texto a 20sp -->
+        <item name="android:background">@color/backgroundColor</item> <!-- Fondo verde -->
     </style>
 
     <style name="Theme.Saludo" parent="Base.Theme.Saludo" />
 </resources>
+
