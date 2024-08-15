@@ -1,9 +1,37 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Saludo" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <!-- Primer Tema -->
+    <style name="Theme.Saludo1" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary1</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant1</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textColor">@color/textColor1</item>
+        <item name="android:background">@color/backgroundColor1</item>
+        <item name="buttonStyle">@style/CustomButtonStyle1</item>
     </style>
 
-    <style name="Theme.Saludo" parent="Base.Theme.Saludo" />
+    <!-- Segundo Tema -->
+    <style name="Theme.Saludo2" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary2</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant2</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="android:textColor">@color/textColor2</item>
+        <item name="android:background">@color/backgroundColor2</item>
+        <item name="buttonStyle">@style/CustomButtonStyle2</item>
+    </style>
+
+    <style name="Theme.Saludo.AppWidgetContainerParent" parent="@android:style/Theme.DeviceDefault">
+        <!-- Radius of the outer bound of widgets to make the rounded corners -->
+        <item name="appWidgetRadius">16dp</item>
+        <!--
+        Radius of the inner view's bound of widgets to make the rounded corners.
+        It needs to be 8dp or less than the value of appWidgetRadius
+        -->
+        <item name="appWidgetInnerRadius">8dp</item>
+    </style>
+
+    <style name="Theme.Saludo.AppWidgetContainer" parent="Theme.Saludo.AppWidgetContainerParent">
+        <!-- Apply padding to avoid the content of the widget colliding with the rounded corners -->
+        <item name="appWidgetPadding">16dp</item>
+    </style>
 </resources>
+
