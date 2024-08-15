@@ -2,9 +2,11 @@ package com.example.saludo
 
 import android.os.Bundle
 import android.widget.Button
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceManager
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.snackbar.Snackbar
 // import com.google.android.material.datepicker.MaterialDatePicker
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +26,10 @@ class MainActivity : AppCompatActivity() {
         // Continúa con la creación de la actividad
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        // Mostrar mensaje de bienvenida
+        val rootView = findViewById<View>(android.R.id.content)
+        Snackbar.make(rootView, "¡Bienvenido a la aplicación!", Snackbar.LENGTH_LONG).show()
 
         val viewPager: ViewPager2 = findViewById(R.id.viewPager)
         val layouts = listOf(
