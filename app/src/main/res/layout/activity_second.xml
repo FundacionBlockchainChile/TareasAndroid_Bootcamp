@@ -4,26 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SecondActivity">
 
-    <Button
-        android:id="@+id/buttonGoToSecondActivity"
+    <TextView
+        android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ir A SEGUNDO ACTIVITY"
+        android:text="BIENVENIDO AL SEGUNDO ACTIVITY"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/buttonGoToWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IR AL SITIO"
+        app:layout_constraintTop_toBottomOf="@id/textTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
         android:backgroundTint="@color/purple_500"
         android:textColor="@android:color/white"/>
 
     <Button
-        android:id="@+id/buttonCloseApp"
+        android:id="@+id/buttonGoBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CERRAR APLICACIÓN"
-        app:layout_constraintTop_toBottomOf="@id/buttonGoToSecondActivity"
+        android:text="VOLVER"
+        app:layout_constraintTop_toBottomOf="@id/buttonGoToWebsite"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="32dp"
