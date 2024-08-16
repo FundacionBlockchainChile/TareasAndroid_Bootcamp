@@ -4,57 +4,33 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.saludo.SecondActivity
-import com.example.saludo.R
 
 class MainActivity : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Log.d("MainActivity", "onCreate called")
-
-        val buttonGoToSecondActivity: Button = findViewById(R.id.buttonGoToSecondActivity)
+        val image1: ImageView = findViewById(R.id.image1)
+        val image2: ImageView = findViewById(R.id.image2)
+        val image3: ImageView = findViewById(R.id.image3)
+        val image4: ImageView = findViewById(R.id.image4)
         val buttonCloseApp: Button = findViewById(R.id.buttonCloseApp)
 
-        // Configurar botón para abrir la segunda actividad
-        buttonGoToSecondActivity.setOnClickListener {
-            Log.d("MainActivity", "Navigating to SecondActivity")
+        val imageClickListener = { imageResId: Int ->
             val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra("imageResId", imageResId)
             startActivity(intent)
         }
 
-        // Configurar botón para cerrar la aplicación
+        image1.setOnClickListener { imageClickListener(R.drawable.image1) }
+        image2.setOnClickListener { imageClickListener(R.drawable.image2) }
+        image3.setOnClickListener { imageClickListener(R.drawable.image3) }
+        image4.setOnClickListener { imageClickListener(R.drawable.image4) }
+
         buttonCloseApp.setOnClickListener {
-            Log.d("MainActivity", "Closing the app")
             finish()
         }
-    }
-
-    override fun onStart() {
-        super.onStart()
-        Log.d("MainActivity", "onStart called")
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.d("MainActivity", "onResume called")
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.d("MainActivity", "onPause called")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.d("MainActivity", "onStop called")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d("MainActivity", "onDestroy called")
     }
 }

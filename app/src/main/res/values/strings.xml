@@ -5,4 +5,11 @@
     <string name="greet_button">Saludo</string>
     <string name="greeting_message">Hola %1$s</string>
     <string name="enter_name">Introduce tu nombre</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="appwidget_text">¡Hola, Mundo!</string>
+    <string name="image1_desc">Descripción de la imagen 1</string>
+    <string name="image2_desc">Descripción de la imagen 2</string>
+    <string name="image3_desc">Descripción de la imagen 3</string>
+    <string name="image4_desc">Descripción de la imagen 4</string>
 </resources>
