@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Saludo</string>
-    <string name="title">Escribe tu nombre</string>
-    <string name="greet_button">Saludo</string>
-    <string name="greeting_message">Hola %1$s</string>
-    <string name="enter_name">Introduce tu nombre</string>
+    <string name="question_one">¿Conoces este meme?</string>
+    <string name="yes_message">Sí lo conozco!</string>
+    <string name="no_message">No... buuu...</string>
 </resources>

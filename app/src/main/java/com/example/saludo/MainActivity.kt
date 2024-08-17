@@ -1,29 +1,25 @@
 package com.example.saludo
 
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
+import android.widget.RadioGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 
 class MainActivity : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Conectar los elementos de la UI
-        val inputName: EditText = findViewById(R.id.inputName)
-        val buttonGreet: Button = findViewById(R.id.buttonGreet)
-        val textGreeting: TextView = findViewById(R.id.textGreeting)
-
-        // Asignar la funcionalidad al botón
-        buttonGreet.setOnClickListener {
-            val name = inputName.text.toString()
-            if (name.isNotBlank()) {
-                textGreeting.text = "Hola $name"
-                textGreeting.visibility = TextView.VISIBLE
+        val radioGroup: RadioGroup = findViewById(R.id.radio_group)
+        radioGroup.setOnCheckedChangeListener { group, checkedId ->
+            val fragment: Fragment = when (checkedId) {
+                R.id.radio_button_pikachu -> PikachuFragment()
+                R.id.radio_button_bulbasaur -> BulbasaurFragment()
+                else -> PikachuFragment()
             }
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, fragment)
+                .commit()
         }
     }
 }
