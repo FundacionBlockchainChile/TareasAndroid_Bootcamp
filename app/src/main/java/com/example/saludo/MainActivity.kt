@@ -1,9 +1,9 @@
 package com.example.saludo
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -13,16 +13,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Conectar los elementos de la UI
-        val inputName: EditText = findViewById(R.id.inputName)
-        val buttonGreet: Button = findViewById(R.id.buttonGreet)
-        val textGreeting: TextView = findViewById(R.id.textGreeting)
+        val inputUrl: EditText = findViewById(R.id.inputUrl)
+        val buttonOpen: Button = findViewById(R.id.buttonOpen)
 
         // Asignar la funcionalidad al botón
-        buttonGreet.setOnClickListener {
-            val name = inputName.text.toString()
-            if (name.isNotBlank()) {
-                textGreeting.text = "Hola $name"
-                textGreeting.visibility = TextView.VISIBLE
+        buttonOpen.setOnClickListener {
+            val url = inputUrl.text.toString()
+            if (url.isNotBlank()) {
+                val intent = Intent(this, WebViewActivity::class.java)
+                intent.putExtra("URL", url)
+                startActivity(intent)
             }
         }
     }

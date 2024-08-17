@@ -5,4 +5,6 @@
     <string name="greet_button">Saludo</string>
     <string name="greeting_message">Hola %1$s</string>
     <string name="enter_name">Introduce tu nombre</string>
+    <string name="enter_url">Introduce la URL</string>
+    <string name="open_url">Abrir URL</string>
 </resources>
