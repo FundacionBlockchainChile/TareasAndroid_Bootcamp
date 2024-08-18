@@ -4,4 +4,6 @@
     <string name="question_one">¿Conoces este meme?</string>
     <string name="yes_message">Sí lo conozco!</string>
     <string name="no_message">No... buuu...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
